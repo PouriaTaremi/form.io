@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body dir="rtl">
+
+    <div class="background">
+
+        <form>
+
+            <!-- ========== part1 ============ -->
+
+            <div>
+                <h4>فُرم فروشگاه</h4>
+
+                <br>
+
+                <label>نام محصول</label>
+                <br>
+                <input name="nam-mahsol" class="input1" type="text" required autofocus>
+            </div>
+
+            <!-- ========== part2 ============ -->
+
+            <div>
+                <label>دسته بندی</label>
+                <br>
+                <select class="opt-select" name="tahsilat" required>
+                    <option>تی شرت</option>
+                    <option>شرمیز</option>
+                    <option>تونیک</option>
+                    <option>مانتو</option>
+                    <option>شلوار</option>
+                    <option>دامن</option>
+                </select>
+            </div>
+
+            <!-- ========== part3 ============ -->
+
+            <div>
+                <label>سایزبندی</label>
+                <br>
+                <input type="checkbox" name="size" value="S" required>
+                <label class="radio-check">S</label>
+
+                <input type="checkbox" name="size" value="M">
+                <label class="radio-check">M</label>
+
+                <input type="checkbox" name="size" value="L">
+                <label class="radio-check">L</label>
+
+                <input type="checkbox" name="size" value="XL">
+                <label class="radio-check">XL</label>
+            </div>
+
+            <!-- ========== part4 ============ -->
+
+            <div>
+                <label>جنسیت</label>
+                <br>
+                <input type="radio" id="female" value="زنانه" name="sex" checked>
+                <label for="female">زنانه</label>
+                <input type="radio" id="male" value="مردانه" name="sex">
+                <label for="male">مردانه</label>
+            </div>
+
+            <!-- ========== part4 ============ -->
+
+            <div>
+                <label>موجودی انبار</label>
+                <br>
+                <input type="number" class="input1" required min="10" placeholder="10-♾️">
+            </div>
+
+            <!-- ========== part5 ============ -->
+
+            <div>
+                <label>توضیحات</label>
+                <br>
+                <br>
+                <textarea class="info" name="توضیحات" cols="20" rows="5"></textarea>
+            </div>
+
+            <!-- ========== part5 ============ -->
+
+            <div>
+                <label>بارگذاری</label>
+                <br>
+                <input name="image" type="file" multiple>
+            </div>
+
+            <!-- ========== last part ============ -->
+            <div class="button-box">
+                <input type="submit" class="input1" value="ارسال">
+                <input type="reset" class="input1" value="پاک کردن">
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
